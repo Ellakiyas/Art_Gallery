@@ -1,0 +1,102 @@
+.container{
+	width: 100%;
+	max-width:100%;
+	background-color: lightgrey;
+}
+.row-myTasksNew {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  width: 100%;
+  margin-top: 50px;
+  height: 150px;
+  margin-left:20px;
+  margin-right:20px;
+  
+}
+.input-task-name-container,
+.tasks-headings-name-container {
+  justify-content: space-between;
+}
+.tasks-headings-name-container{
+  align-items: flex-start;
+}
+.input-div-myTasksNew {
+  flex-basis: 20%;
+  position: relative;
+}
+.abs-button {
+  position: absolute;
+  bottom: 20%;
+  outline: none;
+  background: transparent;
+  border: none;
+  right: 20px;
+  cursor: pointer;
+}
+.abs-button img {
+  width: 15px;
+}
+.input-div-myTasksNew.button {
+  flex-basis: 5% !important;
+}
+.input-div-myTasksNew label {
+  color: #333333;
+  margin-bottom: 10px;
+  font-size: 20px;
+  font-weight: medium;
+  display: block;
+}
+.input-div-myTasksNew input,
+.input-div-myTasksNew select {
+  background: white;
+  width: 100%;
+  padding: 8px;
+  min-height: 40px;
+  outline: none;
+  border: 1px solid #d7d7d7;
+  border-radius: 4px;
+  color: black;
+}
+.search-btn-tasks-new {
+  background: #3598db;
+  border-radius: 5px;
+  padding: 14px 20px;
+  outline: none;
+  color: white;
+  cursor: pointer;
+  border: none;
+}
+.gallery{
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 30px;
+  margin-left: 30px;
+  margin-right: 30px;
+}
+.gallery .image{
+  width: calc(100% / 4);
+  padding: 6px;
+  margin-right: 20px;
+  margin-bottom: 50px;
+  outline: black solid 6px;
+}
+.gallery .image span{
+  display: flex;
+  width: 100%;
+  overflow: hidden;
+}
+.gallery .image img{
+  width: 100%;
+  vertical-align: middle;
+  transition: all 0.3s ease;
+}
+.gallery .image:hover img{
+  transform: scale(1.1);
+}
+.gallery .image.hide{
+  display: none;
+}
+.gallery .image.show{
+  animation: animate 0.4s ease;
+}

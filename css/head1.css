@@ -1,0 +1,145 @@
+body{
+   font-family: Verdana, sans-serif;
+}
+*{
+	margin:0;
+	padding:0;
+	box-sizing:border-box;
+}
+
+#bc1,.btn{
+	display:none;
+}
+label.logo{
+	color: blanchedalmond;
+	font-size:40px;
+	float:left;
+	padding:0 5%;
+	line-height:60px;
+	font-weight:500;
+}
+label.logo span{
+	color: red;
+	font-size:40px;
+}
+ul{
+	float:left;
+	margin-left:20px;
+}
+ul li{
+	display:inline-block;
+	list-style:none;
+}
+ul li a{
+	color:#fff;
+	line-height:60px;
+	font-size:20px;
+	text-decoration:none;
+	padding:10px 20px;
+}
+ul li::after{
+	content: '';
+	width:0%;
+	height:2px;
+	background:#f44336;
+	display:block;
+	margin:auto;
+	transition: 0.5s;
+
+}
+ul li:hover::after{
+	width:100%;
+
+}
+ul li a:hover{
+	color:lemonchiffon;
+	text-decoration:none;
+}
+#bc2{
+	display:none;
+}
+.search-icon i{
+	position:relative;
+	float:right;
+	right:4%;
+	width:60px;
+	height:60px;
+	line-height:60px;
+	color:#fff;
+	padding:0 20px;
+	
+}
+
+nav ul li ul {
+  position: absolute;
+  top: 66px;
+  right: 0px;
+  width: 180px;
+  display: none;
+  z-index: 88888;
+}
+
+nav ul li:hover ul {
+  display: block;
+}
+
+nav ul li ul li {
+  width: 100%;
+}
+
+nav ul li ul li a {
+  padding: 10px;
+  background: white;
+  color: #444;
+}
+
+nav ul li ul li a.logout {
+  color: red;
+}
+
+nav ul li ul li a:hover {
+  background: #d5d6d6;
+}
+
+nav form{
+	position: absolute;
+	width: 60%;
+	left: 25%;
+	top: 65px;
+}
+nav form input{
+	width: 90%;
+	position: relative;
+	top: -45px;
+	padding: 10px 0px;
+	border: none;
+	outline: none;
+	transform: scaleX(0);
+	transform-origin: right;
+	transition: 0.5s;
+	border-bottom: 1px solid #e5e5e5;
+}
+nav form input::placeholder{
+	font-size: 20px;
+}
+nav form input.expand{
+	transform: scaleX(1);
+	padding: 10px;
+}
+nav form input.expand ~ .fa-search{
+	visibility: hidden;
+}
+nav form input.expand ~ .fa-times{
+	display: block;
+}
+nav form .fa{
+	position: absolute;
+	top: -40px;
+	right: 40px;
+	cursor: pointer;
+	color: white;
+}
+.fa-times{
+	display: none;
+}
+	
